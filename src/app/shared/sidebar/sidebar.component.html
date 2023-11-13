@@ -5,11 +5,18 @@
   [showCloseIcon]="false"
   [style]="{ transition: 'all 1s ease' }"
 >
-  <h3>Sidebar</h3>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.
-  </p>
+  <ng-template pTemplate="header">
+    <h4>Header Content</h4>
+  </ng-template>
+  <ul>
+    <li>
+      <a routerLink="/" routerLinkActive="active">Home</a>
+    </li>
+    <li>
+      <a routerLink="/page1" routerLinkActive="active">About</a>
+    </li>
+    <li>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </li>
+  </ul>
 </p-sidebar>
